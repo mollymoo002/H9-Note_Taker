@@ -12,6 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
+// adds in the routes files
 require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
 
